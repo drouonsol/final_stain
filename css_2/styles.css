@@ -1,11 +1,19 @@
 /*
+
 Landing Zero theme - A free landing page theme from BootstrapZero
 http://www.bootstrapzero.com
+
 */
 
-@import url(./website/fonts/VT323.ttf);
-@import url(https://fonts.googleapis.com/css2?family=VT323&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Electrolize);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
 
+body {
+    margin: 0;
+    height: 100vh;
+    cursor: url("./cursor.svg");
+  }
+  
 html,
 body {
     width: 100%;
@@ -13,11 +21,10 @@ body {
 }
 
 body {
-    font-family: 'Questrial','Helvetica Neue',VT323,sans-serif;
-    background-color: #2b866b;
-    color: rgb(85, 36, 36);
-    text-shadow: 2px 2px 2px transparent;
-    webkit-tap-highlight-color: rgb(0, 255, 191);
+    font-family: 'Questrial','Helvetica Neue',Electrolize,sans-serif;
+    background-color: #1d243b;
+    color: #00e1ff;
+    webkit-tap-highlight-color: rgb(255, 255, 255);
 }
 
 hr {
@@ -33,7 +40,7 @@ hr.light {
 }
 
 a {
-    color: #fffb00;
+    color: #00ffc8;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -41,18 +48,18 @@ a {
 
 a:hover,
 a:focus {
-    color: #000000;
+    color: #00ff2a;
     outline: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Questrial','Helvetica Neue',VT323,sans-serif;
+    font-family: 'Questrial','Helvetica Neue',Electrolize,sans-serif;
 }
 
 p {
-    font-size: 25px;
+    font-size: 17px;
     line-height: 1.7;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .wide-space {
@@ -65,12 +72,12 @@ p {
 }
 
 .bg-primary {
-    background-color: rgb(5, 56, 54);
+    background-color: rgb(34, 131, 148);
 }
 
 .bg-dark {
-    color: rgb(255, 255, 255);
-    background-color: rgb(5, 56, 54);
+    color: rgb(0, 183, 255);
+    background-color: rgb(34, 131, 148);
 }
 
 .cursive {
@@ -79,15 +86,15 @@ p {
 }
 
 .text-faded {
-    color: rgb(204, 189, 189);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .text-dark {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
 }
 
 .text-primary {
-    color: #7a3838;
+    color: #00ffdd;
 }
 
 .modal-content {
@@ -111,18 +118,18 @@ footer {
 }
 
 .navbar-default {
-    border-color: transparent;
-    font-family: 'Questrial','Helvetica Neue',VT323,sans-serif;
-    background-color: rgb(0, 0, 0);
+    border-color: rgba(35,35,35,.05);
+    font-family: 'Questrial','Helvetica Neue',Electrolize,sans-serif;
+    background-color: #222;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
 }
 
 .navbar-header > .navbar-brand {
-    font-family: 'Questrial','Helvetica Neue',VT323,sans-serif;
+    font-family: 'Questrial','Helvetica Neue',Electrolize,sans-serif;
     color: #00ffb3;
-    padding: 25px;
+    padding: 15px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
     transition: padding .2s ease-in;
@@ -134,7 +141,7 @@ footer {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #252020;
+    background-color: #ff0000;
 }
 .navbar-default .navbar-toggle, .navbar-default .navbar-collapse {
     border-color: transparent;
@@ -146,17 +153,16 @@ footer {
     font-size: 13px;
     font-weight: 700;
     color: rgb(233, 0, 0);
-    text-shadow: transparent;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #fbff00;
+    color: #00f7ff;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #ff0000 !important;
+    color: #1eff00 !important;
     background-color: transparent;
 }
 
@@ -175,18 +181,18 @@ footer {
     }
 
     .navbar-header > .navbar-brand {
-        color: rgba(0, 255, 255, 0.7);
+        color: rgba(255,255,255,0.7);
         padding: 19px;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #0b6ebe;
+        color: #f4f4f4;
     }
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(0, 183, 255, 0.8);
+        color: rgba(255,255,255,0.8);
         padding: 20px;
         letter-spacing: 1.1px;
         text-shadow: 1px 1px 1px rgba(60,60,60,0.7);
@@ -194,7 +200,7 @@ footer {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #9b3333;
+        color: #fefefe;
     }
 
     .navbar-default.affix {
@@ -204,7 +210,7 @@ footer {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 15px;
-        color: #ff0000;
+        color: #00fff2;
         padding: 20px;
         letter-spacing: 1px;
     }
@@ -217,12 +223,12 @@ footer {
     .navbar-default.affix .nav > li>a,
     .navbar-default.affix .nav>li>a:focus {
         color: #ddd;
-        text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.7);
+        text-shadow: 1px 1px 1px rgba(30,30,30,0.7);
     }
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #c8ff00;
+        color: #9c27b0;
     }
 }
 
@@ -437,8 +443,8 @@ textarea {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    border-color: #ffd900;
-    color: #222;
+    border-color: #ff0000;
+    color: rgb(255, 0, 0);
     background-color: #f2f2f2;
     opacity: 0.7;
 }
@@ -510,7 +516,7 @@ fieldset[disabled] .btn-default.active {
 ::selection {
     text-shadow: none;
     color: #fff;
-    background: #222;
+    background: rgb(255, 255, 255);
 }
 
 img::selection {
